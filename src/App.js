@@ -1,11 +1,12 @@
 import "./App.css";
+import Bio from "./components/Bio/Bio";
 import DesktopHomePage from "./components/DesktopHomePage/DesktopHomePage";
 
 function App() {
-  console.log("Hellooo");
   return (
     <div>
       <DesktopHomePage />
+      <Bio />
     </div>
   );
 }

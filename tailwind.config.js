@@ -6,18 +6,19 @@ module.exports = {
       backgroundImage: (theme) => ({
         "desktop-home-page":
           "url('/src/components/DesktopHomePage/gray-black-bg.svg')",
+        "test": "url('/src/components/Bio/LogoITB1.png')",
       }),
       height: {
         semilg: "26rem",
         lg: "651px",
       },
       margin: {
-        "30": "7.3rem",
+        30: "7.3rem",
       },
-      backgroundColor: theme => ({
-        ...theme('colors'),
-        'gray-350': '#c4c4c4',
-      })
+      backgroundColor: (theme) => ({
+        ...theme("colors"),
+        "gray-350": "#c4c4c4",
+      }),
     },
   },
   variants: {
