@@ -1,5 +1,6 @@
 import "./App.css";
 import Bio from "./components/Bio/Bio";
+import ContactMe from "./components/ContactMe/ContactMe";
 import DesktopHomePage from "./components/DesktopHomePage/DesktopHomePage";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
       <DesktopHomePage />
       <Bio />
+      <ContactMe />
     </div>
   );
 }

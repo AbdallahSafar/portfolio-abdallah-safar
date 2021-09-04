@@ -18,11 +18,13 @@ export default function Bio() {
           building new experiences in the domain of web development, so to be a
           full stack developer and not only a front end one.
         </p>
-        <div className="text-gray-200 text-lg flex justify-between mt-5">
-          <pre className="montserrat font-medium">|        MORE        |</pre>
+        <div className="text-gray-200 flex mt-3 font-medium montserrat">
+          <pre className="text-2xl">|   </pre>
+          <pre className="text-lg self-center">MORE</pre>
+          <pre className="text-2xl">   |</pre>
         </div>
       </div>
-      <div className="bg-test w-full width-test bg-cover mr-16"></div>
+      <div className="bg-BioITB w-full width-test bg-cover mr-16"></div>
     </div>
   );
 }
