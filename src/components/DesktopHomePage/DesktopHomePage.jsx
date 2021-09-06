@@ -7,7 +7,10 @@ import linkedinLogo from "./linkedin-logo.svg";
 
 export default function DesktopHomePage() {
   return (
-    <div className="bg-desktop-home-page w-full h-screen bg-center bg-cover py-7 relative">
+    <div
+      id="home"
+      className="bg-desktop-home-page w-full h-screen bg-center bg-cover py-7 relative"
+    >
       <div className="flex justify-between w-full">
         <div className="flex justify-end w-44">
           <img src={logo} alt="logo" className="w-16 h-16" />
