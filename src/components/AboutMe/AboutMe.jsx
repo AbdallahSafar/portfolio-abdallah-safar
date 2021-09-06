@@ -27,7 +27,7 @@ export default function AboutMe() {
         </p>
       </div>
       <img src={separator} alt="separator" />
-      <div className="flex flex-wrap mt-20 w-xl mb-10">
+      <div className="flex flex-wrap mt-20 w-full pl-60 mb-10">
         <div id="design" className="w-md mr-40">
           <div className="relative w-60 bg-red-300 mb-20">
             <img src={design} alt="design" className="absolute inset-0" />
