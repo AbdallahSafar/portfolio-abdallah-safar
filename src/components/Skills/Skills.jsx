@@ -39,7 +39,6 @@ export default function Skills() {
           </div>
         ))}
       </div>
-      <img src={separator} alt="separator" className="mt-10" />
     </div>
   );
 }

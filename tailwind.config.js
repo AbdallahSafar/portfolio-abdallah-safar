@@ -7,6 +7,7 @@ module.exports = {
         "desktop-home-page":
           "url('/src/components/DesktopHomePage/gray-black-bg.svg')",
         BioITB: "url('/src/components/Bio/LogoITB1.png')",
+        projects: "url('/src/components/Projects/bg-projects.svg')",
       }),
       height: {
         semilg: "26rem",
