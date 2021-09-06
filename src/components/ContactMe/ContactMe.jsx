@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import separator from "../../images/separator.svg";
 import emailjs from "emailjs-com";
+import { userID } from "../../EmailJS-userID";
 
 export default function ContactMe() {
   const [person, setPerson] = useState({
@@ -20,12 +21,7 @@ export default function ContactMe() {
     event.preventDefault();
 
     emailjs
-      .sendForm(
-        "gmail",
-        "contact-me-portfolio",
-        event.target,
-        "user_PxDqQdoEdadBNHENhNn6p"
-      )
+      .sendForm("gmail", "contact-me-portfolio", event.target, userID)
       .then(
         (result) => {
           console.log(result.text);
