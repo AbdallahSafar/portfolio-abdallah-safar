@@ -3,6 +3,7 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import Bio from "./components/Bio/Bio";
 import ContactMe from "./components/ContactMe/ContactMe";
 import DesktopHomePage from "./components/DesktopHomePage/DesktopHomePage";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <DesktopHomePage />
       <Bio />
       <AboutMe />
+      <Skills />
       <ContactMe />
     </div>
   );

@@ -15,6 +15,7 @@ module.exports = {
       width: {
         md: "28rem",
         lg: "35rem",
+        semixl: "56rem",
         xl: "66rem",
       },
       margin: {
