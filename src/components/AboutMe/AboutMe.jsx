@@ -6,7 +6,7 @@ import maintenance from "./maintenance.svg";
 
 export default function AboutMe() {
   return (
-    <div className="flex flex-col items-center w-full">
+    <div id="aboutme" className="flex flex-col items-center w-full">
       <div className="border-4 border-black p-5 w-56 h-16 flex items-center justify-center montserrat font-semibold text-2xl mt-20">
         ABOUT ME
       </div>
