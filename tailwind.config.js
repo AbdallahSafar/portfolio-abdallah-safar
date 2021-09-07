@@ -3,11 +3,20 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      screens: {
+        sm: { min: "0px", max: "640px" },
+      },
       backgroundImage: (theme) => ({
         "desktop-home-page":
           "url('/src/components/DesktopHomePage/gray-black-bg.svg')",
         BioITB: "url('/src/components/Bio/LogoITB1.png')",
         projects: "url('/src/components/Projects/bg-projects.svg')",
+        "project-satisfying-food":
+          "url('/src/components/Projects/satisfyingFood1.jpg')",
+        "project-moviesApp": "url('/src/components/Projects/MoviesApp.png')",
+        // "project-teachingApp":
+        //   "url('/src/components/Projects/TeachingApp3.png')",
+        "project-walletApp": "url('/src/components/Projects/WalletApp.png')",
       }),
       height: {
         semilg: "26rem",
@@ -26,6 +35,7 @@ module.exports = {
         ...theme("colors"),
         "gray-350": "#c4c4c4",
         "gray-250": "#D7D7D7",
+        "black-700": "#1D1D1D",
       }),
     },
   },
