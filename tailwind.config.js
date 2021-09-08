@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       screens: {
         sm: { min: "0px", max: "640px" },
-        md: { min: "650px", max: "1200px" },
+        md: { min: "640px", max: "1200px" },
       },
       backgroundImage: (theme) => ({
         "desktop-home-page":

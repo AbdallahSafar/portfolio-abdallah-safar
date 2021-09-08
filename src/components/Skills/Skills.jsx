@@ -14,7 +14,7 @@ export default function Skills() {
           USING NOW:
         </h1>
       </div>
-      <div className="flex flex-wrap w-8/12 justify-center mt-10 sm:w-full">
+      <div className="flex flex-wrap w-8/12 justify-center mt-10 sm:w-full md:w-full">
         {usingNow.map((skill) => (
           <div className="mx-12 mb-14" key={skill.name}>
             <Skill skillData={skill} />
@@ -38,7 +38,7 @@ export default function Skills() {
           OTHER SKILLS:
         </h1>
       </div>
-      <div className="flex flex-wrap w-8/12 justify-center mt-10 sm:w-full">
+      <div className="flex flex-wrap w-8/12 justify-center mt-10 sm:w-full md:w-full">
         {otherSkills.map((skill) => (
           <div className="mx-12 mb-14" key={skill.name}>
             <Skill skillData={skill} />

@@ -95,7 +95,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="h-semilg w-full flex flex-col items-center bio-bg-color pr-2">
-            <div className="overflow-y-auto bg-red-500 w-full h-5/6">
+            <div className="overflow-y-auto w-full h-5/6">
               <img src={satisfyingFood1} alt="" className="w-full" />
             </div>
             <h1 className="montserrat italic text-lg text-gray-300 mt-2">
@@ -120,7 +120,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="h-semilg w-full flex flex-col items-center bio-bg-color pr-2">
-            <div className="overflow-y-auto bg-red-500 w-full h-5/6">
+            <div className="overflow-y-auto w-full h-5/6">
               <img src={satisfyingFood2} alt="" className="w-full" />
             </div>
             <h1 className="montserrat italic text-lg text-gray-300 mt-2">
