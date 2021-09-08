@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio-abdallah-safar/static/css/main.b4592ad4.chunk.css",
-    "main.js": "/portfolio-abdallah-safar/static/js/main.ae95e27b.chunk.js",
-    "main.js.map": "/portfolio-abdallah-safar/static/js/main.ae95e27b.chunk.js.map",
+    "main.css": "/portfolio-abdallah-safar/static/css/main.b784580f.chunk.css",
+    "main.js": "/portfolio-abdallah-safar/static/js/main.1344b9ba.chunk.js",
+    "main.js.map": "/portfolio-abdallah-safar/static/js/main.1344b9ba.chunk.js.map",
     "runtime-main.js": "/portfolio-abdallah-safar/static/js/runtime-main.17e30417.js",
     "runtime-main.js.map": "/portfolio-abdallah-safar/static/js/runtime-main.17e30417.js.map",
     "static/css/2.3d7e498c.chunk.css": "/portfolio-abdallah-safar/static/css/2.3d7e498c.chunk.css",
-    "static/js/2.e6101317.chunk.js": "/portfolio-abdallah-safar/static/js/2.e6101317.chunk.js",
-    "static/js/2.e6101317.chunk.js.map": "/portfolio-abdallah-safar/static/js/2.e6101317.chunk.js.map",
+    "static/js/2.d6966eea.chunk.js": "/portfolio-abdallah-safar/static/js/2.d6966eea.chunk.js",
+    "static/js/2.d6966eea.chunk.js.map": "/portfolio-abdallah-safar/static/js/2.d6966eea.chunk.js.map",
     "index.html": "/portfolio-abdallah-safar/index.html",
     "static/css/2.3d7e498c.chunk.css.map": "/portfolio-abdallah-safar/static/css/2.3d7e498c.chunk.css.map",
-    "static/css/main.b4592ad4.chunk.css.map": "/portfolio-abdallah-safar/static/css/main.b4592ad4.chunk.css.map",
-    "static/js/2.e6101317.chunk.js.LICENSE.txt": "/portfolio-abdallah-safar/static/js/2.e6101317.chunk.js.LICENSE.txt",
+    "static/css/main.b784580f.chunk.css.map": "/portfolio-abdallah-safar/static/css/main.b784580f.chunk.css.map",
+    "static/js/2.d6966eea.chunk.js.LICENSE.txt": "/portfolio-abdallah-safar/static/js/2.d6966eea.chunk.js.LICENSE.txt",
     "static/media/@-logo.45c7129d.svg": "/portfolio-abdallah-safar/static/media/@-logo.45c7129d.svg",
     "static/media/HMS1.96bc61ff.png": "/portfolio-abdallah-safar/static/media/HMS1.96bc61ff.png",
     "static/media/HMS2.45797cbf.png": "/portfolio-abdallah-safar/static/media/HMS2.45797cbf.png",
@@ -33,8 +33,8 @@
   "entrypoints": [
     "static/js/runtime-main.17e30417.js",
     "static/css/2.3d7e498c.chunk.css",
-    "static/js/2.e6101317.chunk.js",
-    "static/css/main.b4592ad4.chunk.css",
-    "static/js/main.ae95e27b.chunk.js"
+    "static/js/2.d6966eea.chunk.js",
+    "static/css/main.b784580f.chunk.css",
+    "static/js/main.1344b9ba.chunk.js"
   ]
 }
