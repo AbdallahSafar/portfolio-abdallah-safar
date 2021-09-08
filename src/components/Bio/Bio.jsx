@@ -17,7 +17,7 @@ export default function Bio() {
 
   return (
     <div className="w-full bio-bg-color flex justify-between sm:justify-center">
-      <div className="ml-14 sm:mx-auto sm:w-5/6 sm:flex sm:flex-col sm:items-center sm:bg-BioITB sm:bg-no-repeat sm:bg-center md:bg-BioITB md:bg-no-repeat md:bg-center">
+      <div className="ml-14 sm:w-full sm:mx-auto sm:w-5/6 sm:flex sm:flex-col sm:items-center sm:bg-BioITB sm:bg-no-repeat sm:bg-center md:bg-BioITB md:bg-no-repeat md:bg-center">
         <h1 className="capitalize montserrat text-gray-200 font-semibold mt-6 mb-6 text-3xl sm:text-4xl">
           BIO
         </h1>
@@ -32,7 +32,7 @@ export default function Bio() {
           full stack developer and not only a front end one.
         </p>
         <a href="#aboutme">
-          <div className="text-gray-200 mt-3 font-medium border-l-4 border-r-4 border-gray-200 w-28 h-7 montserrat bg-transparent mb-3 text-center sm:text-xl">
+          <div className="text-gray-200 mt-3 font-medium border-l-4 border-r-4 border-gray-200 w-28 h-7 montserrat bg-transparent mb-3 text-center sm:text-xl sm:mt-5">
             MORE
           </div>
         </a>
