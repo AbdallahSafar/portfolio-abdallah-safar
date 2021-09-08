@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/portfolio-abdallah-safar/static/css/main.b4592ad4.chunk.css",
+    "main.js": "/portfolio-abdallah-safar/static/js/main.d2f54b3f.chunk.js",
+    "main.js.map": "/portfolio-abdallah-safar/static/js/main.d2f54b3f.chunk.js.map",
+    "runtime-main.js": "/portfolio-abdallah-safar/static/js/runtime-main.17e30417.js",
+    "runtime-main.js.map": "/portfolio-abdallah-safar/static/js/runtime-main.17e30417.js.map",
+    "static/css/2.3d7e498c.chunk.css": "/portfolio-abdallah-safar/static/css/2.3d7e498c.chunk.css",
+    "static/js/2.e6101317.chunk.js": "/portfolio-abdallah-safar/static/js/2.e6101317.chunk.js",
+    "static/js/2.e6101317.chunk.js.map": "/portfolio-abdallah-safar/static/js/2.e6101317.chunk.js.map",
+    "index.html": "/portfolio-abdallah-safar/index.html",
+    "static/css/2.3d7e498c.chunk.css.map": "/portfolio-abdallah-safar/static/css/2.3d7e498c.chunk.css.map",
+    "static/css/main.b4592ad4.chunk.css.map": "/portfolio-abdallah-safar/static/css/main.b4592ad4.chunk.css.map",
+    "static/js/2.e6101317.chunk.js.LICENSE.txt": "/portfolio-abdallah-safar/static/js/2.e6101317.chunk.js.LICENSE.txt",
+    "static/media/@-logo.45c7129d.svg": "/portfolio-abdallah-safar/static/media/@-logo.45c7129d.svg",
+    "static/media/HMS1.96bc61ff.png": "/portfolio-abdallah-safar/static/media/HMS1.96bc61ff.png",
+    "static/media/HMS2.45797cbf.png": "/portfolio-abdallah-safar/static/media/HMS2.45797cbf.png",
+    "static/media/index.css": "/portfolio-abdallah-safar/static/media/satisfyingFood1.4cff0e6f.jpg",
+    "static/media/design.053d3e28.svg": "/portfolio-abdallah-safar/static/media/design.053d3e28.svg",
+    "static/media/development.26406c42.svg": "/portfolio-abdallah-safar/static/media/development.26406c42.svg",
+    "static/media/facebook.18d70747.svg": "/portfolio-abdallah-safar/static/media/facebook.18d70747.svg",
+    "static/media/github-logo.9f5b1e8c.svg": "/portfolio-abdallah-safar/static/media/github-logo.9f5b1e8c.svg",
+    "static/media/instagram.f5f838c8.svg": "/portfolio-abdallah-safar/static/media/instagram.f5f838c8.svg",
+    "static/media/linkedin-logo.f22ed6be.svg": "/portfolio-abdallah-safar/static/media/linkedin-logo.f22ed6be.svg",
+    "static/media/linkedin.9d97f8c9.svg": "/portfolio-abdallah-safar/static/media/linkedin.9d97f8c9.svg",
+    "static/media/logo.d8848a8f.svg": "/portfolio-abdallah-safar/static/media/logo.d8848a8f.svg",
+    "static/media/maintenance.555d4fda.svg": "/portfolio-abdallah-safar/static/media/maintenance.555d4fda.svg",
+    "static/media/profile-pic.6f976888.png": "/portfolio-abdallah-safar/static/media/profile-pic.6f976888.png",
+    "static/media/styles.css": "/portfolio-abdallah-safar/static/media/revicons.e8746a62.woff",
+    "static/media/satisfyingFood2.fa47e162.jpg": "/portfolio-abdallah-safar/static/media/satisfyingFood2.fa47e162.jpg",
+    "static/media/separator.83d456a3.svg": "/portfolio-abdallah-safar/static/media/separator.83d456a3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.17e30417.js",
+    "static/css/2.3d7e498c.chunk.css",
+    "static/js/2.e6101317.chunk.js",
+    "static/css/main.b4592ad4.chunk.css",
+    "static/js/main.d2f54b3f.chunk.js"
+  ]
+}
