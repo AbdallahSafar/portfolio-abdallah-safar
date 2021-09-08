@@ -48,7 +48,10 @@ export default function ContactMe() {
         I would love to hear from you!
       </h1>
       <img src={separator} alt="separator" />
-      <form className="w-lg flex flex-col items-center" onSubmit={sendEmail}>
+      <form
+        className="w-5/12 sm:w-9/12 flex flex-col items-center"
+        onSubmit={sendEmail}
+      >
         <input
           type="text"
           placeholder="ENTER YOUR NAME*"
