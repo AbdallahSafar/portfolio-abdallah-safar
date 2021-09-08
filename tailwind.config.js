@@ -10,13 +10,11 @@ module.exports = {
       backgroundImage: (theme) => ({
         "desktop-home-page":
           "url('/src/components/DesktopHomePage/gray-black-bg.svg')",
-        BioITB: "url('/src/components/Bio/LogoITB1.png')",
+        BioITB: "url('/src/components/Bio/LogoITB2.png')",
         projects: "url('/src/components/Projects/bg-projects.svg')",
         "project-satisfying-food":
           "url('/src/components/Projects/satisfyingFood1.jpg')",
         "project-moviesApp": "url('/src/components/Projects/MoviesApp.png')",
-        // "project-teachingApp":
-        //   "url('/src/components/Projects/TeachingApp3.png')",
         "project-walletApp": "url('/src/components/Projects/WalletApp.png')",
       }),
       height: {

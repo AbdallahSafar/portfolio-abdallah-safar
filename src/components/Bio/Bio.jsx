@@ -1,10 +1,23 @@
-import React from "react";
-// import ITB from "./LogoITB1.png";
+import React, { useEffect, useState } from "react";
+import ITB from "./LogoITB1.png";
+import ITB2 from "./LogoITB2.png";
 
 export default function Bio() {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const smallScreen = screenWidth < 1200 ? true : false;
+  console.log(smallScreen);
+
+  useEffect(() => {
+    function handleResize() {
+      setScreenWidth(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+  });
+
   return (
-    <div className="w-full h-80 bio-bg-color flex justify-between">
-      <div className="ml-14">
+    <div className="w-full bio-bg-color flex justify-between sm:justify-center">
+      <div className="ml-14 sm:mx-auto sm:w-5/6 sm:flex sm:flex-col sm:items-center sm:bg-BioITB sm:bg-no-repeat sm:bg-center md:bg-BioITB md:bg-no-repeat md:bg-center">
         <h1 className="capitalize montserrat text-gray-200 font-semibold mt-6 mb-6 text-3xl">
           BIO
         </h1>
@@ -19,12 +32,12 @@ export default function Bio() {
           full stack developer and not only a front end one.
         </p>
         <a href="#aboutme">
-          <div className="text-gray-200 mt-3 font-medium border-l-4 border-r-4 border-gray-200 w-28 h-7 montserrat bg-transparent cursor-pointer text-center">
+          <div className="text-gray-200 mt-3 font-medium border-l-4 border-r-4 border-gray-200 w-28 h-7 montserrat bg-transparent mb-3 text-center">
             MORE
           </div>
         </a>
       </div>
-      <div className="bg-BioITB w-full width-test bg-cover mr-16"></div>
+      {!smallScreen && <img src={ITB} alt="" className="w-96" />}
     </div>
   );
 }
