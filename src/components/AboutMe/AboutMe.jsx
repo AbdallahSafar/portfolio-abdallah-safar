@@ -10,7 +10,7 @@ export default function AboutMe() {
       <div className="border-4 border-black p-5 w-56 h-16 flex items-center justify-center montserrat font-semibold text-2xl mt-20">
         ABOUT ME
       </div>
-      <div className="text-center sm:text-justify sm:text-xl sm:px-14 mt-10 w-full px-20 text-lg mb-10">
+      <div className="text-center xs:text-justify xs:text-xl xs:px-14 sm:text-justify sm:text-xl sm:px-14 mt-10 w-full px-20 text-lg mb-10">
         <p className="mb-5">
           My name is <i>Abdallah Safar</i>, I'm a fourth year applied Electrical
           and Telecommunication Engineering student at the Lebanese University
@@ -27,7 +27,7 @@ export default function AboutMe() {
         </p>
       </div>
       <img src={separator} alt="separator" />
-      <div className="flex justify-between sm:justify-center md:justify-center flex-wrap mt-20 w-3/4 mb-10">
+      <div className="flex justify-between xs:justify-center sm:justify-center md:justify-center flex-wrap mt-20 w-3/4 mb-10">
         <div id="design" className="w-md">
           <div className="relative w-60 mb-20">
             <img src={design} alt="design" className="absolute inset-0" />
@@ -38,7 +38,7 @@ export default function AboutMe() {
             also create it from scratch by consulting with you during work.
           </p>
         </div>
-        <div id="development" className="w-md sm:mt-8 md:mt-8">
+        <div id="development" className="w-md xs:mt-8 sm:mt-8 md:mt-8">
           <div className="relative w-60 mb-20">
             <img
               src={development}

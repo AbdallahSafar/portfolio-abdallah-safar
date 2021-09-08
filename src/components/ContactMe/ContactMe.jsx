@@ -49,7 +49,7 @@ export default function ContactMe() {
       </h1>
       <img src={separator} alt="separator" />
       <form
-        className="w-5/12 sm:w-9/12 flex flex-col items-center"
+        className="w-5/12 xs:w-9/12 sm:w-9/12 flex flex-col items-center"
         onSubmit={sendEmail}
       >
         <input

@@ -17,11 +17,11 @@ export default function Bio() {
 
   return (
     <div className="w-full bio-bg-color flex justify-between sm:justify-center">
-      <div className="ml-14 sm:w-full sm:mx-auto sm:w-5/6 sm:flex sm:flex-col sm:items-center sm:bg-BioITB sm:bg-no-repeat sm:bg-center md:bg-BioITB md:bg-no-repeat md:bg-center">
-        <h1 className="capitalize montserrat text-gray-200 font-semibold mt-6 mb-6 text-3xl sm:text-4xl">
+      <div className="ml-14 xs:w-full xs:mx-auto xs:w-5/6 xs:flex xs:flex-col xs:items-center xs:bg-BioITB xs:bg-no-repeat xs:bg-center sm:w-full sm:mx-auto sm:w-5/6 sm:flex sm:flex-col sm:items-center sm:bg-BioITB sm:bg-no-repeat sm:bg-center md:bg-BioITB md:bg-no-repeat md:bg-center">
+        <h1 className="capitalize montserrat text-gray-200 font-semibold mt-6 mb-6 text-3xl xs:text-4xl sm:text-4xl">
           BIO
         </h1>
-        <p className="w-10/12 text-gray-200 text-lg text-justify sm:text-xl">
+        <p className="w-10/12 text-gray-200 text-lg text-justify xs:text-xl sm:text-xl">
           I am a programmer. My passion for coding has started in my first year
           at uni while I took my first course about the C# language, and learned
           lots of algorithms and how to be a problem solver. So because of this
@@ -32,7 +32,7 @@ export default function Bio() {
           full stack developer and not only a front end one.
         </p>
         <a href="#aboutme">
-          <div className="text-gray-200 mt-3 font-medium border-l-4 border-r-4 border-gray-200 w-28 h-7 montserrat bg-transparent mb-3 text-center sm:text-xl sm:mt-5">
+          <div className="text-gray-200 mt-3 font-medium border-l-4 border-r-4 border-gray-200 w-28 h-7 montserrat bg-transparent mb-3 text-center xs:text-xl xs:mt-5 sm:text-xl sm:mt-5">
             MORE
           </div>
         </a>

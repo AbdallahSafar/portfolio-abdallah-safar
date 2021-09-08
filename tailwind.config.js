@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        sm: { min: "0px", max: "640px" },
+        xs: { min: "0px", max: "450px" },
+        sm: { min: "450px", max: "640px" },
         md: { min: "640px", max: "1200px" },
       },
       backgroundImage: (theme) => ({
