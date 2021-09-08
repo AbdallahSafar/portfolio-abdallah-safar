@@ -27,9 +27,9 @@ export default function AboutMe() {
         </p>
       </div>
       <img src={separator} alt="separator" />
-      <div className="flex flex-wrap mt-20 w-full pl-60 mb-10">
-        <div id="design" className="w-md mr-40">
-          <div className="relative w-60 bg-red-300 mb-20">
+      <div className="flex justify-between sm:justify-center md:justify-center flex-wrap mt-20 w-3/4 mb-10">
+        <div id="design" className="w-md">
+          <div className="relative w-60 mb-20">
             <img src={design} alt="design" className="absolute inset-0" />
             <h1 className="absolute top-6 left-6 text-xl font-bold">DESIGN</h1>
           </div>
@@ -39,7 +39,7 @@ export default function AboutMe() {
           </p>
         </div>
         <div id="development" className="w-md">
-          <div className="relative w-60 bg-red-300 mb-20">
+          <div className="relative w-60 mb-20">
             <img
               src={development}
               alt="development"
@@ -55,21 +55,23 @@ export default function AboutMe() {
           </p>
         </div>
       </div>
-      <div id="maintenance" className="w-md">
-        <div className="relative w-60 bg-red-300 mb-20">
-          <img
-            src={maintenance}
-            alt="maintenance"
-            className="absolute inset-0"
-          />
-          <h1 className="absolute top-6 left-8 text-xl font-bold">
-            MAINTENANCE
-          </h1>
+      <div className="flex justify-center w-3/4">
+        <div id="maintenance" className="w-md">
+          <div className="relative w-60 mb-20">
+            <img
+              src={maintenance}
+              alt="maintenance"
+              className="absolute inset-0"
+            />
+            <h1 className="absolute top-6 left-8 text-xl font-bold">
+              MAINTENANCE
+            </h1>
+          </div>
+          <p className="text-justify ml-8 text-lg mb-20">
+            In case of any problems or the need for changes, I can introduce new
+            functionalities and solutions.
+          </p>
         </div>
-        <p className="text-justify ml-8 text-lg mb-20">
-          In case of any problems or the need for changes, I can introduce new
-          functionalities and solutions.
-        </p>
       </div>
       <img src={separator} alt="separator" />
     </div>
