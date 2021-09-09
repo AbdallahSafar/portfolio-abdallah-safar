@@ -10,7 +10,7 @@ export default function AboutMe() {
       <div className="border-4 border-black p-5 w-56 h-16 flex items-center justify-center montserrat font-semibold text-2xl mt-20">
         ABOUT ME
       </div>
-      <div className="text-center xs:text-justify xs:text-xl xs:px-14 sm:text-justify sm:text-xl sm:px-14 mt-10 w-full px-20 text-lg mb-10">
+      <div className="text-center xs:text-justify xs:text-xl sm:text-justify sm:text-xl mt-10 w-full px-20 xs:px-9 sm:px-12 text-lg mb-10">
         <p className="mb-5">
           My name is <i>Abdallah Safar</i>, I'm a fourth year applied Electrical
           and Telecommunication Engineering student at the Lebanese University
@@ -27,18 +27,21 @@ export default function AboutMe() {
         </p>
       </div>
       <img src={separator} alt="separator" />
-      <div className="flex justify-between xs:justify-center sm:justify-center md:justify-center flex-wrap mt-20 w-3/4 mb-10">
-        <div id="design" className="w-md">
+      <div className="flex justify-between xs:justify-center sm:justify-center md:justify-center flex-wrap mt-20 w-3/4 xs:w-full sm:w-full mb-10">
+        <div id="design" className="w-md xs:w-10/12 sm:w-10/12">
           <div className="relative w-60 mb-20">
             <img src={design} alt="design" className="absolute inset-0" />
             <h1 className="absolute top-6 left-6 text-xl font-bold">DESIGN</h1>
           </div>
-          <p className="text-justify ml-7 text-lg">
+          <p className="text-justify ml-7 text-lg sm:text-xl xs:text-xl">
             I can design the website based on your needs and suggestions. I can
             also create it from scratch by consulting with you during work.
           </p>
         </div>
-        <div id="development" className="w-md xs:mt-8 sm:mt-8 md:mt-8">
+        <div
+          id="development"
+          className="w-md xs:mt-8 sm:mt-8 md:mt-8 xs:w-10/12 sm:w-10/12"
+        >
           <div className="relative w-60 mb-20">
             <img
               src={development}
@@ -49,14 +52,14 @@ export default function AboutMe() {
               DEVELOPMENT
             </h1>
           </div>
-          <p className="text-justify ml-8 text-lg">
+          <p className="text-justify ml-8 text-lg sm:text-xl xs:text-xl">
             Based on a project created by me or another one, sent by you, I can
             program the website to be fully functional and responsive.
           </p>
         </div>
       </div>
-      <div className="flex justify-center w-3/4">
-        <div id="maintenance" className="w-md">
+      <div className="flex justify-center w-3/4 xs:w-full sm:w-full">
+        <div id="maintenance" className="w-md xs:w-10/12 sm:w-10/12">
           <div className="relative w-60 mb-20">
             <img
               src={maintenance}
@@ -67,7 +70,7 @@ export default function AboutMe() {
               MAINTENANCE
             </h1>
           </div>
-          <p className="text-justify ml-8 text-lg mb-20">
+          <p className="text-justify ml-8 text-lg mb-20 sm:text-xl xs:text-xl">
             In case of any problems or the need for changes, I can introduce new
             functionalities and solutions.
           </p>
