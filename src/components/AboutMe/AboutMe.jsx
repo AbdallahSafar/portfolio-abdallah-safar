@@ -12,7 +12,7 @@ export default function AboutMe() {
       </div>
       <div className="text-center xs:text-justify xs:text-xl sm:text-justify sm:text-xl mt-10 w-full px-20 xs:px-9 sm:px-12 text-lg mb-10">
         <p className="mb-5">
-          My name is <i>Abdallah Safar</i>, I'm a fourth year applied Electrical
+          My name is <i>Abdallah Safar</i>, I'm a fifth year applied Electrical
           and Telecommunication Engineering student at the Lebanese University
           in Tripoli, Lebanon. I have been learning Front-End technologies for 6
           months now and this time was just enough for me to make sure that this
