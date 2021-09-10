@@ -40,7 +40,10 @@ export default function ContactMe() {
   }
 
   return (
-    <div className="bg-gray-250 w-full h-80 flex flex-col items-center h-auto">
+    <div
+      id="contact-me"
+      className="bg-gray-250 w-full h-80 flex flex-col items-center h-auto"
+    >
       <div className="border-4 border-black p-5 w-56 h-16 flex items-center justify-center montserrat font-semibold text-2xl mt-20">
         CONTACT
       </div>

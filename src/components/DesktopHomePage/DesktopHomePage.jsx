@@ -4,6 +4,7 @@ import profilePic from "./profile-pic.png";
 import atLogo from "./@-logo.svg";
 import githubLogo from "./github-logo.svg";
 import linkedinLogo from "./linkedin-logo.svg";
+import Navbar from "../Navbar/Navbar";
 
 export default function DesktopHomePage() {
   return (
@@ -37,7 +38,9 @@ export default function DesktopHomePage() {
           </div>
         </div>
         <div className="w-2/5 h-full flex flex-col justify-between">
-          <div className="w-72 bg-gray-200 mr-96"></div>
+          <div className="mt-8">
+            <Navbar />
+          </div>
           <img src={profilePic} alt="Profile Picture" className="h-5/6 w-3/4" />
         </div>
       </div>
