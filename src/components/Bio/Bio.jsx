@@ -5,7 +5,6 @@ import ITB2 from "./LogoITB2.png";
 export default function Bio() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const smallScreen = screenWidth < 1200 ? true : false;
-  console.log(smallScreen);
 
   useEffect(() => {
     function handleResize() {

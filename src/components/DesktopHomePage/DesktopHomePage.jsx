@@ -8,8 +8,11 @@ import Navbar from "../Navbar/Navbar";
 
 export default function DesktopHomePage() {
   return (
-    <div id="home" className="bg-desktop-home-page w-full h-screen bg-cover">
-      <div className="w-full h-full flex justify-around">
+    <div
+      id="home"
+      className="bg-desktop-home-page w-full h-screen bg-cover md:bg-center"
+    >
+      <div className="w-full h-full flex justify-around relative">
         <div className="w-2/5 h-full px-10 py-5">
           <img src={logo} alt="logo" className="w-16 h-16" />
           <div className="mt-32">
@@ -37,7 +40,7 @@ export default function DesktopHomePage() {
             </a>
           </div>
         </div>
-        <div className="w-2/5 h-full flex flex-col justify-between">
+        <div className="w-2/5 h-full flex flex-col justify-between md:w-5/12">
           <div className="mt-8">
             <Navbar />
           </div>

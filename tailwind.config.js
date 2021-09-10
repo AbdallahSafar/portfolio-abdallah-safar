@@ -13,10 +13,7 @@ module.exports = {
           "url('/src/components/DesktopHomePage/gray-black-bg.svg')",
         BioITB: "url('/src/components/Bio/LogoITB2.png')",
         projects: "url('/src/components/Projects/bg-projects.svg')",
-        "project-satisfying-food":
-          "url('/src/components/Projects/satisfyingFood1.jpg')",
-        "project-moviesApp": "url('/src/components/Projects/MoviesApp.png')",
-        "project-walletApp": "url('/src/components/Projects/WalletApp.png')",
+        menu: "url('/src/components/Menu/bg-image.svg')",
       }),
       height: {
         semilg: "26rem",
@@ -24,6 +21,7 @@ module.exports = {
       },
       width: {
         md: "28rem",
+        semilg: "480px",
         lg: "35rem",
         semixl: "56rem",
         xl: "66rem",
