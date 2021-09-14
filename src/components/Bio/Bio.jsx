@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ITB from "./LogoITB1.png";
-import ITB2 from "./LogoITB2.png";
 
 export default function Bio() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);

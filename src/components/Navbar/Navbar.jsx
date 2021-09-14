@@ -1,12 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useContext } from "react";
+import { StateContext } from "../../StateProvider";
 
 export default function Navbar() {
+  const [state, dispatch] = useContext(StateContext);
+
+  const showMenu = () => {
+    dispatch({ type: "SHOW_MENU", menuDisp: true });
+    console.log(state.menuDisp);
+  };
+
   return (
     <div>
       <img
         src="https://img.icons8.com/ios-filled/50/ffffff/menu.png"
         alt="menu-icon"
-        className="hidden sm:block absolute right-10 top-7"
+        className="hidden sm:block absolute right-10 top-7 cursor-pointer"
+        onClick={showMenu}
       />
       <div className="flex justify-between items-center w-full md:w-lg md:absolute md:right-5 sm:hidden">
         <a

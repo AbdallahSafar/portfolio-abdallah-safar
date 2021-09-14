@@ -1,5 +1,6 @@
 import "./App.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { StateContext } from "./StateProvider";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Bio from "./components/Bio/Bio";
 import ContactMe from "./components/ContactMe/ContactMe";
@@ -10,20 +11,28 @@ import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 
 function App() {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [state, dispatch] = useContext(StateContext);
+  let menuDisp = state.menuDisp;
 
   useEffect(() => {
     function handleResize() {
-      setScreenWidth(window.innerWidth);
+      dispatch({ type: "SET_SCREENWIDTH", screenWidth: window.innerWidth });
+      console.log(state.screenWidth);
     }
-
     window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   });
+
   return (
     <div>
-      {screenWidth > 400 ? (
+      {menuDisp ? (
+        <Menu />
+      ) : (
         <div className="bg-gray-250">
-          <DesktopHomePage />
+          {state.screenWidth > 400 ? <DesktopHomePage /> : <h1>HELLO</h1>}
           <Bio />
           <AboutMe />
           <Skills />
@@ -31,8 +40,6 @@ function App() {
           <ContactMe />
           <Footer />
         </div>
-      ) : (
-        <Menu />
       )}
     </div>
   );
