@@ -9,6 +9,7 @@ import Footer from "./components/Footer/Footer";
 import Menu from "./components/Menu/Menu";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
+import MobileHomePage from "./components/MobileHomePage/MobileHomePage";
 
 function App() {
   const [state, dispatch] = useContext(StateContext);
@@ -32,7 +33,7 @@ function App() {
         <Menu />
       ) : (
         <div className="bg-gray-250">
-          {state.screenWidth > 400 ? <DesktopHomePage /> : <h1>HELLO</h1>}
+          {state.screenWidth > 400 ? <DesktopHomePage /> : <MobileHomePage />}
           <Bio />
           <AboutMe />
           <Skills />
