@@ -1,2 +1,2 @@
 # Personal portfolio
-Originally designed with figma then developed using ReactJS and TailwindCSS framework.
+Originally designed with figma then developed using ReactJS and TailwindCSS frameworks.
