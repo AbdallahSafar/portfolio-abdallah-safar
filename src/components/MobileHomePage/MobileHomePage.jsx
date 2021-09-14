@@ -27,7 +27,7 @@ export default function MobileHomePage() {
       <img
         src={profilePic}
         alt="Profile Picture"
-        className="h-5/6 w-full absolute bottom-0 -right-10"
+        className="h-5/6 w-full absolute bottom-0"
       />
       <div className="absolute bottom-0 w-full h-1/4 mobile-bg-color flex justify-between items-center px-4">
         <div className="text-white">
