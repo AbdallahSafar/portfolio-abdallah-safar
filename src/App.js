@@ -13,13 +13,15 @@ import MobileHomePage from "./components/MobileHomePage/MobileHomePage";
 
 function App() {
   const [state, dispatch] = useContext(StateContext);
+  let smallScreen = state.screenWidth < 500 ? true : false;
   let menuDisp = state.menuDisp;
 
   useEffect(() => {
     function handleResize() {
       dispatch({ type: "SET_SCREENWIDTH", screenWidth: window.innerWidth });
+      if (state.screenWidth > 500) smallScreen = false;
     }
-    window.addEventListener("resize", handleResize);
+    if (!smallScreen) window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -32,7 +34,7 @@ function App() {
         <Menu />
       ) : (
         <div className="bg-gray-250">
-          {state.screenWidth > 400 ? <DesktopHomePage /> : <MobileHomePage />}
+          {state.screenWidth > 500 ? <DesktopHomePage /> : <MobileHomePage />}
           <Bio />
           <AboutMe />
           <Skills />
