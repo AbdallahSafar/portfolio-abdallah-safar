@@ -11,7 +11,6 @@ export default function MobileHomePage() {
 
   const showMenu = () => {
     dispatch({ type: "SHOW_MENU", menuDisp: true });
-    console.log(state.menuDisp);
   };
 
   return (

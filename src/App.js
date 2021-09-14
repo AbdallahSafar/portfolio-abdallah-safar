@@ -18,7 +18,6 @@ function App() {
   useEffect(() => {
     function handleResize() {
       dispatch({ type: "SET_SCREENWIDTH", screenWidth: window.innerWidth });
-      console.log(state.screenWidth);
     }
     window.addEventListener("resize", handleResize);
 
