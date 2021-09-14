@@ -14,6 +14,7 @@ module.exports = {
         BioITB: "url('/src/components/Bio/LogoITB2.png')",
         projects: "url('/src/components/Projects/bg-projects.svg')",
         menu: "url('/src/components/Menu/bg-image.svg')",
+        mobile: "url('/src/components/MobileHomePage/mobile.svg')",
       }),
       height: {
         semilg: "26rem",

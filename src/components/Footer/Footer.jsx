@@ -7,22 +7,24 @@ export default function Footer() {
   return (
     <div className="w-full h-72 bg-black flex flex-col items-center">
       <div className="flex flex-col items-center mt-10 cursor-pointer">
-        <div className="relative w-10 ml-4">
-          <img
-            src="https://img.icons8.com/ios/50/ffffff/collapse-arrow--v1.png"
-            alt=""
-            className="w-6 absolute"
-          />
-          <img
-            src="https://img.icons8.com/ios/50/ffffff/collapse-arrow--v1.png"
-            alt=""
-            className="w-6 absolute top-2"
-          />
-        </div>
         <a href="#home">
-          <h1 className="montserrat text-xl text-white font-medium mt-10">
-            BACK TO TOP
-          </h1>
+          <div className="h-16 flex flex-col items-center justify-between">
+            <div className="relative w-10 ml-4">
+              <img
+                src="https://img.icons8.com/ios/50/ffffff/collapse-arrow--v1.png"
+                alt=""
+                className="w-6 absolute"
+              />
+              <img
+                src="https://img.icons8.com/ios/50/ffffff/collapse-arrow--v1.png"
+                alt=""
+                className="w-6 absolute top-2"
+              />
+            </div>
+            <h1 className="montserrat text-xl text-white font-medium mt-10">
+              BACK TO TOP
+            </h1>
+          </div>
         </a>
       </div>
       <div className="flex mt-10">

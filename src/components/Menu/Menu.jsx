@@ -17,11 +17,11 @@ export default function Menu() {
   return (
     <div className="bg-menu w-full h-screen bg-cover bg-no-repeat">
       <div className="w-full bg-black border-b-2 border-gray-200 flex justify-between items-center px-5 py-2">
-        <img src={logo} alt="logo" className="w-12 h-12" />
+        <img src={logo} alt="logo" className="w-11 h-11" />
         <img
           src={close}
           alt="logo"
-          className="w-9 h-9 cursor-pointer"
+          className="w-8 h-8 cursor-pointer"
           onClick={closeMenu}
         />
       </div>
