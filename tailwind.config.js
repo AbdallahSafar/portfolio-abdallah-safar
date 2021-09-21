@@ -15,6 +15,7 @@ module.exports = {
         projects: "url('/src/components/Projects/bg-projects.svg')",
         menu: "url('/src/components/Menu/bg-image.svg')",
         mobile: "url('/src/components/MobileHomePage/mobile.svg')",
+        profile: "url('/src/components/DesktopHomePage/profile-pic.png')",
       }),
       height: {
         semilg: "26rem",

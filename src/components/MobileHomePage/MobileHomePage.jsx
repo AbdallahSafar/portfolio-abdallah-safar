@@ -24,11 +24,7 @@ export default function MobileHomePage() {
           onClick={showMenu}
         />
       </div>
-      <img
-        src={profilePic}
-        alt="Profile Picture"
-        className="h-5/6 w-full absolute bottom-0"
-      />
+      <div className="w-full h-5/6 absolute bottom-0 bg-profile bg-cover"></div>
       <div className="absolute bottom-0 w-full h-1/4 mobile-bg-color flex justify-between items-center px-4">
         <div className="text-white">
           <h1 className="font-bold raleway text-2xl mb-3">Hi, I am</h1>
