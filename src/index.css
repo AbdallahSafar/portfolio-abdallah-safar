@@ -44,9 +44,9 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-/* .dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu {
   display: block;
-} */
+}
 
 #dropdown-top:hover {
   border-bottom: 2px solid gray;
