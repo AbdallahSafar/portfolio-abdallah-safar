@@ -40,7 +40,12 @@ export default function Projects() {
         <div className="border-t-2 border-gray-300 w-40 mt-2"></div>
       </div>
       <div className="bg-black-700">
-        <Carousel responsive={responsive} infinite={true} autoPlay={true}>
+        <Carousel
+          responsive={responsive}
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={5000}
+        >
           <div className="h-semilg flex flex-col items-center bio-bg-color px-2">
             <img src={moviesApp} alt="" className="h-5/6" />
             <h1 className="montserrat italic text-lg text-gray-300 mt-2">

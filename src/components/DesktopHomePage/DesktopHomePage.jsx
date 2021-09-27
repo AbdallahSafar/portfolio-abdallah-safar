@@ -6,8 +6,12 @@ import githubLogo from "./github-logo.svg";
 import linkedinLogo from "./linkedin-logo.svg";
 import Navbar from "../Navbar/Navbar";
 import LanguageSwitch from "../LanguageSwitch/LanguageSwitch";
+import { useContext } from "react/cjs/react.development";
+import { StateContext } from "../../StateProvider";
 
 export default function DesktopHomePage() {
+  const [state] = useContext(StateContext);
+
   return (
     <div
       id="home"
@@ -19,14 +23,52 @@ export default function DesktopHomePage() {
             <img src={logo} alt="logo" className="w-16 h-16" />
             <LanguageSwitch />
           </div>
-          <div className="mt-32">
-            <h1 className="font-bold raleway text-3xl mb-20">Hi, I am</h1>
-            <h1 className="font-bold raleway text-6xl mb-2">Abdallah Safar</h1>
-            <h1 className="font-bold raleway text-2xl text-gray-500">
-              Front-End Web Developer
+          <div
+            className={
+              state.currentLanguage === "Arabic"
+                ? "mt-32 mr-20 text-right"
+                : "mt-32"
+            }
+          >
+            <h1
+              className={
+                state.currentLanguage === "English"
+                  ? "font-bold raleway text-3xl mb-20"
+                  : "font-bold raleway text-4xl mb-20"
+              }
+            >
+              {state.currentLanguage === "English" ? "Hi, I am" : "مرحبا، أنا"}
+            </h1>
+            <h1
+              className={
+                state.currentLanguage === "English"
+                  ? "font-bold raleway text-6xl mb-2"
+                  : "font-bold raleway text-7xl mb-2"
+              }
+            >
+              {state.currentLanguage === "English"
+                ? "Abdallah Safar"
+                : "عبد الله سفر"}
+            </h1>
+            <h1
+              className={
+                state.currentLanguage === "English"
+                  ? "font-bold raleway text-2xl text-gray-500"
+                  : "font-bold raleway text-3xl text-gray-500"
+              }
+            >
+              {state.currentLanguage === "English"
+                ? "Front-End Web Developer"
+                : "مطور ويب للواجهة الأمامية"}
             </h1>
           </div>
-          <div className="flex mt-20 ml-14 w-6/12">
+          <div
+            className={
+              state.currentLanguage === "English"
+                ? "flex mt-20 ml-14 w-6/12"
+                : "flex mt-20 ml-28 w-6/12"
+            }
+          >
             <a href="mailto:abdallah.safar01@gmail.com" target="_blank">
               <div className="w-14 h-12 bg-gray-350 shadow-md flex justify-center p-2 rounded mr-7">
                 <img src={atLogo} alt="" />

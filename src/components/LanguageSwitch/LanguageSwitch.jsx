@@ -23,7 +23,7 @@ export default function LanguageSwitch() {
   };
 
   return (
-    <div class="dropdown cursor-pointer relative raleway text-xl font-semibold text-gray-500 ml-5">
+    <div className="dropdown cursor-pointer relative raleway text-xl font-semibold text-gray-500 ml-5">
       <div
         id="dropdown-top"
         className={
@@ -33,9 +33,11 @@ export default function LanguageSwitch() {
         }
         onClick={handleDropDownClick}
       >
-        <span>{state.currentLanguage}</span>
+        <span>
+          {state.currentLanguage === "Arabic" ? "عربي" : state.currentLanguage}
+        </span>
         <svg
-          class="fill-current h-4 w-4"
+          className="fill-current h-4 w-4"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
         >
