@@ -20,32 +20,55 @@ export default function Navbar() {
       <div className="flex justify-between items-center w-full md:w-lg md:absolute md:right-5 sm:hidden">
         <a
           href="#aboutme"
-          className="text-white montserrat text-lg font-semibold"
+          className={
+            state.currentLanguage === "English"
+              ? "text-white montserrat text-lg font-semibold"
+              : "text-white text-lg font-semibold"
+          }
         >
-          About me
+          {state.currentLanguage === "English" ? "About me" : "نبذة عني"}
         </a>
         <a
           href="#skills"
-          className="text-white montserrat text-lg font-semibold"
+          className={
+            state.currentLanguage === "English"
+              ? "text-white montserrat text-lg font-semibold"
+              : "text-white text-lg font-semibold"
+          }
         >
-          Skills
+          {state.currentLanguage === "English" ? "Skills" : "مهارات"}
         </a>
         <a
           href="#projects"
-          className="text-white montserrat text-lg font-semibold"
+          className={
+            state.currentLanguage === "English"
+              ? "text-white montserrat text-lg font-semibold"
+              : "text-white text-lg font-semibold"
+          }
         >
-          Projects
+          {state.currentLanguage === "English" ? "Projects" : "مشاريع"}
         </a>
         <a
           href="https://drive.google.com/file/d/1C29xNC0kjKF4LOYj6XcI099ww-_PYxDq/view?usp=sharing"
           target="_blank"
-          className="text-white montserrat text-lg font-semibold"
+          className={
+            state.currentLanguage === "English"
+              ? "text-white montserrat text-lg font-semibold"
+              : "text-white text-lg font-semibold"
+          }
         >
-          Resume
+          {state.currentLanguage === "English" ? "Resume" : "سيرة ذاتية"}
         </a>
         <div className="bg-white rounded-full h-9 w-36 flex justify-center items-center">
-          <a href="#contact-me" className="montserrat text-md font-bold">
-            CONTACT ME
+          <a
+            href="#contact-me"
+            className={
+              state.currentLanguage === "English"
+                ? "montserrat text-md font-bold"
+                : "text-md font-bold"
+            }
+          >
+            {state.currentLanguage === "English" ? "CONTACT ME" : "تواصل معي"}
           </a>
         </div>
       </div>
