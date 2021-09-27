@@ -5,6 +5,7 @@ import atLogo from "./@-logo.svg";
 import githubLogo from "./github-logo.svg";
 import linkedinLogo from "./linkedin-logo.svg";
 import Navbar from "../Navbar/Navbar";
+import LanguageSwitch from "../LanguageSwitch/LanguageSwitch";
 
 export default function DesktopHomePage() {
   return (
@@ -14,7 +15,10 @@ export default function DesktopHomePage() {
     >
       <div className="w-full h-full flex justify-around relative">
         <div className="w-2/5 h-full px-10 py-5">
-          <img src={logo} alt="logo" className="w-16 h-16" />
+          <div className="flex justify-between items-center w-5/12">
+            <img src={logo} alt="logo" className="w-16 h-16" />
+            <LanguageSwitch />
+          </div>
           <div className="mt-32">
             <h1 className="font-bold raleway text-3xl mb-20">Hi, I am</h1>
             <h1 className="font-bold raleway text-6xl mb-2">Abdallah Safar</h1>

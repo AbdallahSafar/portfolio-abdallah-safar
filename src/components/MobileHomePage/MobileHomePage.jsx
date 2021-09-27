@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
 import { StateContext } from "../../StateProvider";
 import logo from "../DesktopHomePage/logo.svg";
-import profilePic from "../DesktopHomePage/profile-pic.png";
 import mailLogo from "../Menu/mail-logo.svg";
 import githubLogo from "../Menu/github-logo.svg";
 import linkedinLogo from "../Menu/linkedin-logo.svg";
