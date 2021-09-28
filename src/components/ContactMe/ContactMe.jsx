@@ -74,8 +74,12 @@ export default function ContactMe() {
           }
           name="name"
           value={person.name}
-          className={`border-l-4 border-b-4 border-black w-full placeholder-gray-600 bg-transparent h-10 px-2 font-medium ${
+          className={`${
+            state.currentLanguage === "English" ? "border-l-4" : "border-r-4"
+          } border-b-4 border-black w-full placeholder-gray-600 bg-transparent h-10 px-2 font-medium ${
             state.currentLanguage === "English" && "montserrat"
+          } ${
+            state.currentLanguage === "Arabic" && "text-right"
           } focus:outline-none mt-20`}
           onChange={(event) => handleInputTyping("name", event.target.value)}
           required
@@ -89,8 +93,12 @@ export default function ContactMe() {
           }
           name="email"
           value={person.email}
-          className={`border-l-4 border-b-4 border-black w-full placeholder-gray-600 bg-transparent h-10 px-2 font-medium ${
+          className={`${
+            state.currentLanguage === "English" ? "border-l-4" : "border-r-4"
+          } border-b-4 border-black w-full placeholder-gray-600 bg-transparent h-10 px-2 font-medium ${
             state.currentLanguage === "English" && "montserrat"
+          } ${
+            state.currentLanguage === "Arabic" && "text-right"
           } focus:outline-none mt-20`}
           onChange={(event) => handleInputTyping("email", event.target.value)}
           required
@@ -102,8 +110,12 @@ export default function ContactMe() {
           }
           name="phone-number"
           value={person.phoneNumber}
-          className={`border-l-4 border-b-4 border-black w-full placeholder-gray-600 bg-transparent h-10 px-2 font-medium ${
+          className={`${
+            state.currentLanguage === "English" ? "border-l-4" : "border-r-4"
+          } border-b-4 border-black w-full placeholder-gray-600 bg-transparent h-10 px-2 font-medium ${
             state.currentLanguage === "English" && "montserrat"
+          } ${
+            state.currentLanguage === "Arabic" && "text-right"
           } focus:outline-none mt-20`}
           onChange={(event) =>
             handleInputTyping("phoneNumber", event.target.value)
@@ -116,8 +128,12 @@ export default function ContactMe() {
           }
           name="message"
           value={person.message}
-          className={`border-l-4 border-b-4 border-black w-full placeholder-gray-600 bg-transparent h-32 px-2 font-medium ${
+          className={`${
+            state.currentLanguage === "English" ? "border-l-4" : "border-r-4"
+          } border-b-4 border-black w-full placeholder-gray-600 bg-transparent h-32 px-2 font-medium ${
             state.currentLanguage === "English" && "montserrat"
+          } ${
+            state.currentLanguage === "Arabic" && "text-right"
           } focus:outline-none mt-10`}
           onChange={(event) => handleInputTyping("message", event.target.value)}
           required
