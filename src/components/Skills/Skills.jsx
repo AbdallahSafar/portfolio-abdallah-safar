@@ -27,7 +27,7 @@ export default function Skills() {
             state.currentLanguage === "Arabic" && "text-2xl mr-28"
           }`}
         >
-          {state.currentLanguage === "English" ? "USING NOW:" : "حاليا أستخدم"}
+          {state.currentLanguage === "English" ? "USING NOW:" : ": حاليا أستخدم"}
         </h1>
       </div>
       <div className="flex flex-wrap w-8/12 justify-center mt-10 xs:w-full sm:w-full md:w-full">
@@ -47,7 +47,7 @@ export default function Skills() {
             state.currentLanguage === "Arabic" && "text-2xl mr-28"
           }`}
         >
-          {state.currentLanguage === "English" ? "LEARNING:" : "أتعلم"}
+          {state.currentLanguage === "English" ? "LEARNING:" : ": أتعلم"}
         </h1>
       </div>
       <div className="flex flex-wrap w-8/12 justify-center mt-10 sm:w-full xs:w-full md:full">
@@ -67,7 +67,7 @@ export default function Skills() {
             state.currentLanguage === "Arabic" && "text-2xl mr-28"
           }`}
         >
-          {state.currentLanguage === "English" ? "OTHER SKILLS" : "مهارات أخرى"}
+          {state.currentLanguage === "English" ? "OTHER SKILLS" : ": مهارات أخرى"}
         </h1>
       </div>
       <div className="flex flex-wrap w-8/12 justify-center mt-10 sm:w-full md:w-full xs:w-full">

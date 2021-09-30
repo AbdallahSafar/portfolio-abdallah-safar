@@ -4,6 +4,7 @@ import logo from "../DesktopHomePage/logo.svg";
 import mailLogo from "../Menu/mail-logo.svg";
 import githubLogo from "../Menu/github-logo.svg";
 import linkedinLogo from "../Menu/linkedin-logo.svg";
+import LanguageSwitch from "../LanguageSwitch/LanguageSwitch";
 
 export default function MobileHomePage() {
   const [state, dispatch] = useContext(StateContext);
@@ -15,7 +16,10 @@ export default function MobileHomePage() {
   return (
     <div id="home" className="w-full h-screen bg-mobile bg-cover relative">
       <div className="w-full flex justify-between items-center px-5 py-3">
-        <img src={logo} alt="logo" className="w-11 h-11" />
+        <div className="w-1/3 flex justify-between items-center">
+          <img src={logo} alt="logo" className="w-11 h-11" />
+          <LanguageSwitch />
+        </div>
         <img
           src="https://img.icons8.com/ios-filled/50/ffffff/menu.png"
           alt="menu-icon"
@@ -24,11 +28,47 @@ export default function MobileHomePage() {
         />
       </div>
       <div className="w-full h-5/6 absolute bottom-0 bg-profile bg-cover"></div>
-      <div className="absolute bottom-0 w-full h-1/4 mobile-bg-color flex justify-between items-center px-4">
-        <div className="text-white">
-          <h1 className="font-bold raleway text-2xl mb-3">Hi, I am</h1>
-          <h1 className="font-bold raleway text-4xl mb-0">Abdallah Safar</h1>
-          <h1 className="font-bold raleway text-lg">Front-End Web Developer</h1>
+      <div
+        className={`absolute bottom-0 w-full h-1/4 mobile-bg-color flex justify-between items-center px-4 ${
+          state.currentLanguage === "Arabic" && "flex-row-reverse"
+        }`}
+      >
+        <div
+          className={`text-white ${
+            state.currentLanguage === "Arabic" && "text-right"
+          }`}
+        >
+          <h1
+            className={
+              state.currentLanguage === "English"
+                ? "font-bold raleway text-2xl mb-3"
+                : "font-bold raleway text-3xl mb-3"
+            }
+          >
+            {state.currentLanguage === "English" ? "Hi, I am" : "مرحبا، أنا"}
+          </h1>
+          <h1
+            className={
+              state.currentLanguage === "English"
+                ? "font-bold raleway text-4xl mb-0"
+                : "font-bold raleway text-5xl mb-1"
+            }
+          >
+            {state.currentLanguage === "English"
+              ? "Abdallah Safar"
+              : "عبد الله سفر"}
+          </h1>
+          <h1
+            className={
+              state.currentLanguage === "English"
+                ? "font-bold raleway text-lg"
+                : "font-bold raleway text-xl"
+            }
+          >
+            {state.currentLanguage === "English"
+              ? "Front-End Web Developer"
+              : "مطور ويب للواجهة الأمامية"}
+          </h1>
         </div>
         <div className="h-5/6 flex flex-col justify-between">
           <a href="mailto:abdallah.safar01@gmail.com" target="_blank">

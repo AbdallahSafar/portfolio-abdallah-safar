@@ -28,17 +28,17 @@ export default function Menu() {
       <div className="w-full flex flex-col items-center justify-between text-white montserrat font-medium text-lg menu-bg-color">
         <div className="flex items-center h-14">
           <a href="#aboutme" onClick={closeMenu}>
-            About me
+            {state.currentLanguage === "English" ? "About me" : "نبذة عني"}
           </a>
         </div>
         <div className="flex items-center h-14">
           <a href="#skills" onClick={closeMenu}>
-            Skills
+            {state.currentLanguage === "English" ? "Skills" : "مهارات"}
           </a>
         </div>
         <div className="flex items-center h-14">
           <a href="#projects" onClick={closeMenu}>
-            Projects
+            {state.currentLanguage === "English" ? "Projects" : "مشاريع"}
           </a>
         </div>
         <div className="flex items-center h-14">
@@ -47,12 +47,12 @@ export default function Menu() {
             target="_blank"
             onClick={closeMenu}
           >
-            Resume
+            {state.currentLanguage === "English" ? "Resume" : "سيرة ذاتية"}
           </a>
         </div>
         <div className="w-full bg-white text-black h-14 flex justify-center items-center text-base font-semibold">
           <a href="#contact-me" className="" onClick={closeMenu}>
-            CONTACT ME
+            {state.currentLanguage === "English" ? "CONTACT ME" : "تواصل معي"}
           </a>
         </div>
       </div>

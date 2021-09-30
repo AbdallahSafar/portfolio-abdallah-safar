@@ -23,13 +23,21 @@ export default function LanguageSwitch() {
   };
 
   return (
-    <div className="dropdown cursor-pointer relative raleway text-xl font-semibold text-gray-500 ml-5">
+    <div
+      className={`dropdown cursor-pointer relative raleway text-xl font-semibold ml-5 ${
+        state.screenWidth < 500 ? "text-white" : "text-gray-500"
+      }`}
+    >
       <div
         id="dropdown-top"
         className={
           dropDown === "hidden"
-            ? "flex justify-between items-center w-28"
-            : "flex justify-between items-center w-28 border-b-2 border-gray-500"
+            ? `flex justify-between items-center ${
+                state.screenWidth < 500 ? "w-24" : "w-28"
+              }`
+            : `flex justify-between items-center ${
+                state.screenWidth < 500 ? "w-24" : "w-28"
+              } border-b-2 border-gray-500`
         }
         onClick={handleDropDownClick}
       >
