@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import logo from "./logo.svg";
 import profilePic from "./profile-pic.png";
 import atLogo from "./@-logo.svg";
@@ -6,7 +6,6 @@ import githubLogo from "./github-logo.svg";
 import linkedinLogo from "./linkedin-logo.svg";
 import Navbar from "../Navbar/Navbar";
 import LanguageSwitch from "../LanguageSwitch/LanguageSwitch";
-import { useContext } from "react/cjs/react.development";
 import { StateContext } from "../../StateProvider";
 
 export default function DesktopHomePage() {
