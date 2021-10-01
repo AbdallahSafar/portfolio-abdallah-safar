@@ -38,10 +38,8 @@ export default function Bio() {
           {state.currentLanguage === "English" ? "BIO" : "سيرة ذاتية"}
         </h1>
         <p
-          className={`w-11/12 text-gray-200 text-lg ${
-            state.currentLanguage === "English" && "text-justify"
-          } xs:text-xl sm:text-xl ${
-            state.currentLanguage === "Arabic" && "text-right"
+          className={`w-11/12 text-gray-200 text-lg text-justify xs:text-xl sm:text-xl ${
+            state.currentLanguage === "Arabic" && "justify-right-text"
           }`}
         >
           {state.currentLanguage === "English"
@@ -53,11 +51,15 @@ export default function Bio() {
           far, I am willing to enrich my career by learning new skills and
           building new experiences in the domain of web development, so to be a
           full stack developer and not only a front end one.`
-            : `.C# أنا مبرمج. لقد بدأ شغفي تجاه البرمجة و تطوير البرامج في سنتي الأولى في الجامعة، حيث تعلمت أول لغة برمجة و هي لغة
-             أثناء تعلمي لهذه اللغة، أخذت الكثير من الخوارزميات و زادت عندي مهارات التي جعلتني أقوم بحل المشاكل بشكل أسرع. وبسبب هذه الخلفية، بدأت التعلم لوحدي حيث بدأت تعلم تطوير الويب عن طريق أخذ دورة مع جمعية ريكودد حيث بدأت بتطوير البرامج الخاصة بي في هذا المجال. للمدى البعيد، أسعى دوما لزيادة مهاراتي و تطوير حياتي المهنية عن طريق بناء خبرات جديدة بحيث أصبح مطور شامل و ليس فقط مطور واجهة أمامية`}
+            : `أنا مبرمج. لقد بدأ شغفي تجاه البرمجة و تطوير البرامج في سنتي الأولى في الجامعة، حيث تعلمت أول لغة برمجة و هي لغة C#. أثناء تعلمي لهذه اللغة، أخذت الكثير من الخوارزميات و زادت عندي مهارات التي جعلتني أقوم بحل المشاكل بشكل أسرع. وبسبب هذه الخلفية، بدأت التعلم لوحدي حيث بدأت تعلم تطوير الويب عن طريق أخذ دورة مع جمعية Re:coded حيث بدأت بتطوير البرامج الخاصة بي في هذا المجال. 
+            للمدى البعيد، أسعى دوما لزيادة مهاراتي و تطوير حياتي المهنية عن طريق بناء خبرات جديدة بحيث أصبح مطور شامل و ليس فقط مطور واجهة أمامية.`}
         </p>
         <a href="#aboutme">
-          <div className={`text-gray-200 mt-3 font-medium border-l-4 border-r-4 border-gray-200 w-28 h-7 ${state.currentLanguage === "English" ? "montserrat" :""} bg-transparent mb-3 text-center xs:text-xl xs:mt-5 sm:text-xl sm:mt-5`}>
+          <div
+            className={`text-gray-200 mt-3 font-medium border-l-4 border-r-4 border-gray-200 w-28 h-7 ${
+              state.currentLanguage === "English" ? "montserrat" : ""
+            } bg-transparent mb-3 text-center xs:text-xl xs:mt-5 sm:text-xl sm:mt-5`}
+          >
             {state.currentLanguage === "English" ? "MORE" : "المزيد"}
           </div>
         </a>

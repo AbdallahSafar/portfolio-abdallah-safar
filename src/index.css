@@ -51,3 +51,7 @@ input::-webkit-inner-spin-button {
 #dropdown-top:hover {
   border-bottom: 2px solid gray;
 }
+
+.justify-right-text {
+  direction: rtl;
+}
