@@ -25,7 +25,11 @@ export default function Menu() {
           onClick={closeMenu}
         />
       </div>
-      <div className="w-full flex flex-col items-center justify-between text-white montserrat font-medium text-lg menu-bg-color">
+      <div
+        className={`w-full flex flex-col items-center justify-between text-white ${
+          state.currentLanguage === "English" && "montserrat"
+        } font-medium text-lg menu-bg-color`}
+      >
         <div className="flex items-center h-14">
           <a href="#aboutme" onClick={closeMenu}>
             {state.currentLanguage === "English" ? "About me" : "نبذة عني"}
@@ -50,7 +54,11 @@ export default function Menu() {
             {state.currentLanguage === "English" ? "Resume" : "سيرة ذاتية"}
           </a>
         </div>
-        <div className="w-full bg-white text-black h-14 flex justify-center items-center text-base font-semibold">
+        <div
+          className={`w-full bg-white text-black h-14 flex justify-center items-center ${
+            state.currentLanguage === "English" ? "text-base" : "text-lg"
+          } font-semibold`}
+        >
           <a href="#contact-me" className="" onClick={closeMenu}>
             {state.currentLanguage === "English" ? "CONTACT ME" : "تواصل معي"}
           </a>
@@ -58,10 +66,18 @@ export default function Menu() {
       </div>
       <div className="w-full flex flex-col items-center mt-10">
         <h2 className="text-white text-3xl advent-pro mb-2">
-          my name is Abdallah
+          {state.currentLanguage === "English"
+            ? "my name is Abdallah"
+            : "إسمي عبد الله"}
         </h2>
-        <h1 className="text-white text-4xl font-semibold montserrat mb-5">
-          I'M A DEVELOPER
+        <h1
+          className={`text-white ${
+            state.currentLanguage === "English" ? "text-4xl" : "text-5xl"
+          } font-semibold montserrat mb-5`}
+        >
+          {state.currentLanguage === "English"
+            ? "I'M A DEVELOPER"
+            : "أنا مطور برامج"}
         </h1>
         <img src={whiteSeparator} alt="separator" />
         <div className="w-4/6 flex justify-between mt-10">
