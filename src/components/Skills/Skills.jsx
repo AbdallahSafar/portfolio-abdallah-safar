@@ -1,8 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import Skill from "./Skill";
-import separator from "../../images/separator.svg";
 import { learning, otherSkills, usingNow } from "../../MySkills";
-import { useContext } from "react/cjs/react.development";
 import { StateContext } from "../../StateProvider";
 
 export default function Skills() {
@@ -27,7 +25,9 @@ export default function Skills() {
             state.currentLanguage === "Arabic" && "text-2xl mr-28"
           }`}
         >
-          {state.currentLanguage === "English" ? "USING NOW:" : ": حاليا أستخدم"}
+          {state.currentLanguage === "English"
+            ? "USING NOW:"
+            : ": حاليا أستخدم"}
         </h1>
       </div>
       <div className="flex flex-wrap w-8/12 justify-center mt-10 xs:w-full sm:w-full md:w-full">
@@ -67,7 +67,9 @@ export default function Skills() {
             state.currentLanguage === "Arabic" && "text-2xl mr-28"
           }`}
         >
-          {state.currentLanguage === "English" ? "OTHER SKILLS" : ": مهارات أخرى"}
+          {state.currentLanguage === "English"
+            ? "OTHER SKILLS"
+            : ": مهارات أخرى"}
         </h1>
       </div>
       <div className="flex flex-wrap w-8/12 justify-center mt-10 sm:w-full md:w-full xs:w-full">

@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import separator from "../../images/separator.svg";
 import emailjs from "emailjs-com";
 import { userID } from "../../EmailJS-userID";
-import { useContext } from "react/cjs/react.development";
 import { StateContext } from "../../StateProvider";
 
 export default function ContactMe() {
