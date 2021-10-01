@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import moviesApp from "./MoviesApp.png";
@@ -7,6 +7,7 @@ import satisfyingFood2 from "./satisfyingFood2.jpg";
 import walletApp from "./WalletApp.png";
 import HMS1 from "./HMS1.png";
 import HMS2 from "./HMS2.png";
+import { StateContext } from "../../StateProvider";
 
 const responsive = {
   superLargeDesktop: {
@@ -28,15 +29,27 @@ const responsive = {
 };
 
 export default function Projects() {
+  const [state] = useContext(StateContext);
+
   return (
     <div id="projects" className="mt-20 mb-10">
       <div className="flex justify-center items-center w-full h-60 bg-projects bg-cover bg-center xs:bg-top">
-        <div className="border-4 border-black p-5 w-56 h-16 flex items-center justify-center montserrat font-semibold text-2xl">
-          PROJECTS
+        <div
+          className={`border-4 border-black p-5 w-56 h-16 flex items-center justify-center montserrat font-semibold ${
+            state.currentLanguage === "English" ? "text-2xl" : "text-3xl"
+          }`}
+        >
+          {state.currentLanguage === "English" ? "PROJECTS" : "مشاريع"}
         </div>
       </div>
       <div className="bio-bg-color w-full h-20 flex flex-col justify-center items-center">
-        <h1 className="text-gray-300 text-lg montserrat">ALL</h1>
+        <h1
+          className={`text-gray-300 text-lg ${
+            state.currentLanguage === "English" && "montserrat"
+          }`}
+        >
+          {state.currentLanguage === "English" ? "ALL" : "كلها"}
+        </h1>
         <div className="border-t-2 border-gray-300 w-40 mt-2"></div>
       </div>
       <div className="bg-black-700">
@@ -55,17 +68,21 @@ export default function Projects() {
               <a
                 href="https://prnhj.csb.app/"
                 target="_blank"
-                className="hover:text-gray-500"
+                className={`hover:text-gray-500 ${
+                  state.currentLanguage === "Arabic" && "text-2xl"
+                }`}
               >
-                DEMO
+                {state.currentLanguage === "English" ? "DEMO" : "تجربة"}
               </a>
               <h1 className="text-xl">|</h1>
               <a
                 href="https://codesandbox.io/s/react-movies-project-prnhj"
                 target="_blank"
-                className="hover:text-gray-500"
+                className={`hover:text-gray-500 ${
+                  state.currentLanguage === "Arabic" && "text-2xl"
+                }`}
               >
-                CODE
+                {state.currentLanguage === "English" ? "CODE" : "كود"}
               </a>
             </div>
           </div>
@@ -78,9 +95,11 @@ export default function Projects() {
               <a
                 href="https://github.com/AbdallahSafar/Hospital-Management-System"
                 target="_blank"
-                className="hover:text-gray-500"
+                className={`hover:text-gray-500 ${
+                  state.currentLanguage === "Arabic" && "text-2xl"
+                }`}
               >
-                CODE
+                {state.currentLanguage === "English" ? "CODE" : "كود"}
               </a>
             </div>
           </div>
@@ -93,9 +112,11 @@ export default function Projects() {
               <a
                 href="https://github.com/AbdallahSafar/Hospital-Management-System"
                 target="_blank"
-                className="hover:text-gray-500"
+                className={`hover:text-gray-500 ${
+                  state.currentLanguage === "Arabic" && "text-2xl"
+                }`}
               >
-                CODE
+                {state.currentLanguage === "English" ? "CODE" : "كود"}
               </a>
             </div>
           </div>
@@ -110,17 +131,21 @@ export default function Projects() {
               <a
                 href="https://satisfying-food.netlify.app/"
                 target="_blank"
-                className="hover:text-gray-500"
+                className={`hover:text-gray-500 ${
+                  state.currentLanguage === "Arabic" && "text-2xl"
+                }`}
               >
-                DEMO
+                {state.currentLanguage === "English" ? "DEMO" : "تجربة"}
               </a>
               <h1 className="text-xl">|</h1>
               <a
                 href="https://github.com/Lebanon-02-WBC-Capstones/satisfying-food-web"
                 target="_blank"
-                className="hover:text-gray-500"
+                className={`hover:text-gray-500 ${
+                  state.currentLanguage === "Arabic" && "text-2xl"
+                }`}
               >
-                CODE
+                {state.currentLanguage === "English" ? "CODE" : "كود"}
               </a>
             </div>
           </div>
@@ -135,17 +160,21 @@ export default function Projects() {
               <a
                 href="https://satisfying-food.netlify.app/"
                 target="_blank"
-                className="hover:text-gray-500"
+                className={`hover:text-gray-500 ${
+                  state.currentLanguage === "Arabic" && "text-2xl"
+                }`}
               >
-                DEMO
+                {state.currentLanguage === "English" ? "DEMO" : "تجربة"}
               </a>
               <h1 className="text-xl">|</h1>
               <a
                 href="https://github.com/Lebanon-02-WBC-Capstones/satisfying-food-web"
                 target="_blank"
-                className="hover:text-gray-500"
+                className={`hover:text-gray-500 ${
+                  state.currentLanguage === "Arabic" && "text-2xl"
+                }`}
               >
-                CODE
+                {state.currentLanguage === "English" ? "CODE" : "كود"}
               </a>
             </div>
           </div>
@@ -158,24 +187,36 @@ export default function Projects() {
               <a
                 href="https://c02o6.csb.app/"
                 target="_blank"
-                className="hover:text-gray-500"
+                className={`hover:text-gray-500 ${
+                  state.currentLanguage === "Arabic" && "text-2xl"
+                }`}
               >
-                DEMO
+                {state.currentLanguage === "English" ? "DEMO" : "تجربة"}
               </a>
               <h1 className="text-xl">|</h1>
               <a
                 href="https://codesandbox.io/s/wallet-app-c02o6"
                 target="_blank"
-                className="hover:text-gray-500"
+                className={`hover:text-gray-500 ${
+                  state.currentLanguage === "Arabic" && "text-2xl"
+                }`}
               >
-                CODE
+                {state.currentLanguage === "English" ? "CODE" : "كود"}
               </a>
             </div>
           </div>
         </Carousel>
         <div className="bio-bg-color w-full h-20 flex flex-col justify-end items-center">
-          <h1 className="text-gray-200 text-lg montserrat mb-2">
-            And many more to come!
+          <h1
+            className={`text-gray-200 text-lg ${
+              state.currentLanguage === "English"
+                ? "montserrat"
+                : "justify-right-text text-xl"
+            } mb-2`}
+          >
+            {state.currentLanguage === "English"
+              ? "And many more to come!"
+              : "والمزيد قادم بالتأكيد!"}
           </h1>
         </div>
       </div>
