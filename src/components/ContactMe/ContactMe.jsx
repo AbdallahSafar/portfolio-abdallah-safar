@@ -88,7 +88,7 @@ export default function ContactMe() {
           placeholder={
             state.currentLanguage === "English"
               ? "ENTER YOUR EMAIL*"
-              : "*أدخل إيميلك"
+              : "*أدخل بريدك الإلكتروني"
           }
           name="email"
           value={person.email}
