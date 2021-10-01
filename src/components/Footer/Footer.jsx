@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { StateContext } from "../../StateProvider";
 import fb from "./facebook.svg";
 import linkedin from "./linkedin.svg";
 import instagram from "./instagram.svg";
 
 export default function Footer() {
+  const [state] = useContext(StateContext);
+
   return (
     <div className="w-full h-72 bg-black flex flex-col items-center">
       <div className="flex flex-col items-center mt-10 cursor-pointer">
@@ -21,8 +24,14 @@ export default function Footer() {
                 className="w-6 absolute top-2"
               />
             </div>
-            <h1 className="montserrat text-xl text-white font-medium mt-10">
-              BACK TO TOP
+            <h1
+              className={`${
+                state.currentLanguage === "English" && "montserrat"
+              } text-xl text-white font-medium mt-10`}
+            >
+              {state.currentLanguage === "English"
+                ? "BACK TO TOP"
+                : "عودة إلى البداية"}
             </h1>
           </div>
         </a>
@@ -58,7 +67,13 @@ export default function Footer() {
         </a>
       </div>
       <h1 className="mt-10 text-white text-lg">
-        ©2021 <i>Abdallah</i> Safar All Rights Reserved
+        {state.currentLanguage === "English" ? (
+          <div>
+            ©2021 <i>Abdallah Safar</i> All Rights Reserved
+          </div>
+        ) : (
+          <div>©2021 جميع الحقوق محفوظة</div>
+        )}
       </h1>
     </div>
   );
