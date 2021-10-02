@@ -220,7 +220,6 @@ export default function Projects() {
           </h1>
         </div>
       </div>
-      ;
     </div>
   );
 }
