@@ -57,8 +57,8 @@ export default function DesktopHomePage() {
               }
             >
               {state.currentLanguage === "English"
-                ? "Front-End Web Developer"
-                : "مطور ويب للواجهة الأمامية"}
+                ? "Computer Engineer"
+                : "مهندس كمبيوتر"}
             </h1>
           </div>
           <div

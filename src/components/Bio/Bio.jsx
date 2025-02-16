@@ -42,16 +42,12 @@ export default function Bio() {
           }`}
         >
           {state.currentLanguage === "English"
-            ? `I am a programmer. My passion for coding has started in my first year
-          at uni while I took my first course about the C# language, and learned
-          lots of algorithms and how to be a problem solver. So because of this
-          background I started self-learning by taking front end bootcamp at
-          Re:coded and I started building my own projects in this domain. So
-          far, I am willing to enrich my career by learning new skills and
-          building new experiences in the domain of web development, so to be a
-          full stack developer and not only a front end one.`
-            : `أنا مبرمج. لقد بدأ شغفي تجاه البرمجة و تطوير البرامج في سنتي الأولى في الجامعة، حيث تعلمت أول لغة برمجة و هي لغة C#. أثناء تعلمي لهذه اللغة، أخذت الكثير من الخوارزميات و زادت عندي المهارات التي جعلتني أقوم بحل المشاكل بشكل أسرع. وبسبب هذه الخلفية، بدأت التعلم لوحدي حيث بدأت تعلم تطوير الويب عن طريق أخذ دورة مع جمعية Re:coded حيث بدأت بتطوير البرامج الخاصة بي في هذا المجال. 
-            للمدى البعيد، أسعى دوما لزيادة مهاراتي و تطوير حياتي المهنية عن طريق بناء خبرات جديدة بحيث أصبح مطور شامل و ليس فقط مطور واجهة أمامية.`}
+            ? `I am a Computer and Communication Engineer with expertise in software development, systems integration, and WMS customization. With a proven track record of stabilizing critical projects and delivering innovative solutions tailored to client needs, I am passionate about problem-solving and continuous learning. I strive to optimize business processes through technology and innovation.
+
+            In addition to my backend and systems expertise, I have experience in web development, building and optimizing web applications to create seamless user experiences. I am always eager to expand my skill set and stay up to date with the latest web technologies.`
+            : `أنا مهندس حاسوب واتصالات متخصص في تطوير البرمجيات، تكامل الأنظمة، وتخصيص أنظمة إدارة المخازن. لدي سجل حافل في استقرار المشاريع الحيوية وتقديم حلول مبتكرة تتناسب مع احتياجات العملاء. أنا شغوف بحل المشكلات والتعلم المستمر، وأسعى لتحسين العمليات التجارية من خلال التكنولوجيا والابتكار.
+
+            بالإضافة إلى خبرتي في البرمجة الخلفية وتكامل الأنظمة، لدي خبرة في تطوير الويب، حيث أعمل على بناء وتحسين تطبيقات الويب لإنشاء تجارب مستخدم سلسة. أنا دائمًا متحمس لتوسيع مجموعة مهاراتي ومواكبة أحدث تقنيات الويب.`}
         </p>
         <a href="#aboutme">
           <div
