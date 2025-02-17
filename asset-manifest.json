@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio-abdallah-safar/static/css/main.c07dd3b8.chunk.css",
-    "main.js": "/portfolio-abdallah-safar/static/js/main.2a3f4c58.chunk.js",
-    "main.js.map": "/portfolio-abdallah-safar/static/js/main.2a3f4c58.chunk.js.map",
+    "main.css": "/portfolio-abdallah-safar/static/css/main.a0dc8127.chunk.css",
+    "main.js": "/portfolio-abdallah-safar/static/js/main.47419c82.chunk.js",
+    "main.js.map": "/portfolio-abdallah-safar/static/js/main.47419c82.chunk.js.map",
     "runtime-main.js": "/portfolio-abdallah-safar/static/js/runtime-main.17e30417.js",
     "runtime-main.js.map": "/portfolio-abdallah-safar/static/js/runtime-main.17e30417.js.map",
-    "static/css/2.3d7e498c.chunk.css": "/portfolio-abdallah-safar/static/css/2.3d7e498c.chunk.css",
-    "static/js/2.240b074c.chunk.js": "/portfolio-abdallah-safar/static/js/2.240b074c.chunk.js",
-    "static/js/2.240b074c.chunk.js.map": "/portfolio-abdallah-safar/static/js/2.240b074c.chunk.js.map",
+    "static/css/2.26fe564f.chunk.css": "/portfolio-abdallah-safar/static/css/2.26fe564f.chunk.css",
+    "static/js/2.e388aaf1.chunk.js": "/portfolio-abdallah-safar/static/js/2.e388aaf1.chunk.js",
+    "static/js/2.e388aaf1.chunk.js.map": "/portfolio-abdallah-safar/static/js/2.e388aaf1.chunk.js.map",
     "index.html": "/portfolio-abdallah-safar/index.html",
-    "static/css/2.3d7e498c.chunk.css.map": "/portfolio-abdallah-safar/static/css/2.3d7e498c.chunk.css.map",
-    "static/css/main.c07dd3b8.chunk.css.map": "/portfolio-abdallah-safar/static/css/main.c07dd3b8.chunk.css.map",
-    "static/js/2.240b074c.chunk.js.LICENSE.txt": "/portfolio-abdallah-safar/static/js/2.240b074c.chunk.js.LICENSE.txt",
+    "static/css/2.26fe564f.chunk.css.map": "/portfolio-abdallah-safar/static/css/2.26fe564f.chunk.css.map",
+    "static/css/main.a0dc8127.chunk.css.map": "/portfolio-abdallah-safar/static/css/main.a0dc8127.chunk.css.map",
+    "static/js/2.e388aaf1.chunk.js.LICENSE.txt": "/portfolio-abdallah-safar/static/js/2.e388aaf1.chunk.js.LICENSE.txt",
     "static/media/@-logo.45c7129d.svg": "/portfolio-abdallah-safar/static/media/@-logo.45c7129d.svg",
     "static/media/HMS1.96bc61ff.png": "/portfolio-abdallah-safar/static/media/HMS1.96bc61ff.png",
     "static/media/HMS2.45797cbf.png": "/portfolio-abdallah-safar/static/media/HMS2.45797cbf.png",
@@ -39,9 +39,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.17e30417.js",
-    "static/css/2.3d7e498c.chunk.css",
-    "static/js/2.240b074c.chunk.js",
-    "static/css/main.c07dd3b8.chunk.css",
-    "static/js/main.2a3f4c58.chunk.js"
+    "static/css/2.26fe564f.chunk.css",
+    "static/js/2.e388aaf1.chunk.js",
+    "static/css/main.a0dc8127.chunk.css",
+    "static/js/main.47419c82.chunk.js"
   ]
 }
