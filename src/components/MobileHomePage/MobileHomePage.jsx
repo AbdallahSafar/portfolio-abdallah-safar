@@ -66,8 +66,8 @@ export default function MobileHomePage() {
             }
           >
             {state.currentLanguage === "English"
-              ? "Front-End Web Developer"
-              : "مطور ويب للواجهة الأمامية"}
+              ? "Computer Engineer"
+              : "مهندس كمبيوتر"}
           </h1>
         </div>
         <div className="h-5/6 flex flex-col justify-between">
