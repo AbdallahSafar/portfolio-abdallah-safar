@@ -6,6 +6,7 @@ import whiteSeparator from "./separatorWhite.svg";
 import mailLogo from "./mail-logo.svg";
 import githubLogo from "./github-logo.svg";
 import linkedinLogo from "./linkedin-logo.svg";
+import { resume } from "../../urls";
 
 export default function Menu() {
   const [state, dispatch] = useContext(StateContext);
@@ -46,11 +47,7 @@ export default function Menu() {
           </a>
         </div>
         <div className="flex items-center h-14">
-          <a
-            href="https://drive.google.com/file/d/1C29xNC0kjKF4LOYj6XcI099ww-_PYxDq/view?usp=sharing"
-            target="_blank"
-            onClick={closeMenu}
-          >
+          <a href={resume} target="_blank" onClick={closeMenu}>
             {state.currentLanguage === "English" ? "Resume" : "سيرة ذاتية"}
           </a>
         </div>
