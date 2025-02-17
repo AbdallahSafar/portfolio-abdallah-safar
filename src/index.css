@@ -55,3 +55,7 @@ input::-webkit-inner-spin-button {
 .justify-right-text {
   direction: rtl;
 }
+
+html {
+  scroll-behavior: smooth;
+}
