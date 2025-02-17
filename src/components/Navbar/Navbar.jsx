@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { StateContext } from "../../StateProvider";
+import { resume } from "../../urls";
 
 export default function Navbar() {
   const [state, dispatch] = useContext(StateContext);
@@ -8,6 +9,8 @@ export default function Navbar() {
     dispatch({ type: "SHOW_MENU", menuDisp: true });
     console.log(state.menuDisp);
   };
+
+  console.log(resume);
 
   return (
     <div>
@@ -54,9 +57,9 @@ export default function Navbar() {
             {state.currentLanguage === "English" ? "Projects" : "مشاريع"}
           </a>
         </div>
-        <div className="transition-transform transform duration-500 ease-in-out hover:scale-125">
+        <div className="transition-transform transform duration-500 ease-in-out hover:scale-125 cursor-pointer">
           <a
-            href="https://drive.google.com/file/d/1ExWnCdc_G3YwPeyMTY4nJ7wdKAlbhK4V/view?usp=drive_link"
+            href={resume}
             target="_blank"
             className={
               state.currentLanguage === "English"
